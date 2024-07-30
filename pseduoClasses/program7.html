@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        img {
+            margin: 20px;
+            width: 100px;
+            display: none;
+        }
+
+        .cat:hover~.catImg,
+        .snake:hover~.snakeImg,
+        .dog:hover~.dogImg,
+        .pig:hover~.pigImg {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="cat">Cat</button>
+        <button class="snake">Snake</button>
+        <button class="dog">Dog</button>
+        <button class="pig">Pig</button>
+        <img src="../allfiles/Cat.jpg" alt="" class="catImg">
+        <img src="../allfiles/Snake.jpg" alt="" class="snakeImg">
+        <img src="../allfiles/German-Shepherd.webp" alt="" class="dogImg">
+        <img src="../allfiles/Pig.avif" alt="" class="pigImg">
+    </div>
+</body>
+
+</html>

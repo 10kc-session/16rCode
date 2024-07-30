@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P6</title>
+    <style>
+        .content{
+            display: none;
+            width: 105px;
+            border: 1px solid;
+            background-color: #ccc;
+        }
+        .content > a{
+            display: block;
+            margin: 10px;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            background-color: #eee;
+            color: black;
+            font-size: 18px;
+            border: 1px solid;
+        }
+        .but{
+            background-color: #ddd;
+            border: 0;
+            padding: 10px;
+            font-size: 21px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        /* .but:hover + .content{
+            display: block;
+        } */
+        /* .but:active + .content{
+            display: block;
+        } */
+        .but:focus-within + .content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button class="but">Shopping</button>
+    <div class="content">
+        <a href="#">Amazon</a>
+        <a href="#">Flipkart</a>
+        <a href="#">Ajio</a>
+        <a href="#">Meesho</a>
+        <a href="#">Myntra</a>
+    </div>
+</body>
+</html>

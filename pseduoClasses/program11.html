@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::selection{
+            background-color: lightblue;
+            color: white;
+        }
+        input::placeholder{
+            font-size: large;
+            text-align: center;
+            color  : red;
+            opacity: 0.5;
+        }
+        ul > li::before{
+            content: '→	';
+        }
+        ul > li::marker{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+    </ul>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id eaque accusantium eveniet iure. Quaerat,
+        recusandae. Nobis provident at itaque aspernatur iusto cupiditate eaque rerum, fugiat, adipisci quaerat
+        perspiciatis ea.
+    </p>
+    
+
+    <input type="text" placeholder="username">
+</body>
+
+</html>

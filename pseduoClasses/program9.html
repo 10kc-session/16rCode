@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1::before{
+            content: '⚠ ';
+            font-size: 20px;
+            background-color: yellow;
+        }
+        .p2::before{
+            content: 'HTML →  ';
+            font-weight: bold;
+            color: blueviolet;
+        }
+        h3::before , h3::after{
+            content: '⚡';
+        }
+        h4::after{
+            content: ' ← Father of HTML';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">High Voltage Stay Alert</p>
+    <p class="p2">HyperText Markup Language</p>
+    <h3>Sale 50% Off</h3>
+    <h4>Tim Bernes Lee</h4>
+</body>
+</html>

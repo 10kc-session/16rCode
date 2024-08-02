@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: repeat(3,200px);
+            gap: 10px;
+            height: 800px;
+            width: 800px;
+            border: 2px solid;
+            /* justify-items: center;
+            align-items: center; */
+            /* align-content: end;
+            justify-content: end; */
+            place-content: center;
+            place-items: center;
+
+        }
+        .container > div{
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+            height: 40px;
+            width: 40px;
+        }
+        .item1{
+            /* align-self: start;
+            justify-self: start; */
+            align-self: end;
+            justify-self: end;
+        }
+        .item1 , .item6{
+            background-color: lightcoral;
+        }
+        .item2{
+            align-self: start;
+            justify-self: end;
+        }
+        .item4{
+            justify-self: start;
+        }
+        .item2 , .item4{
+            background-color: lightgray;
+        }
+        .item3,.item5{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+        <div class="item6">Item 6</div>
+        <div class="item4">Item 7</div>
+        <div class="item5">Item 8</div>
+        <div class="item6">Item 9</div>
+    </div>
+</body>
+</html>

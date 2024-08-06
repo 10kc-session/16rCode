@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 200px;
+            border: 1px solid;
+            text-align: center;
+        }
+        button {
+            background-color: black;
+            color: white;
+            margin: 10px 10px;
+        }
+        .container > .one:hover ~ img{
+            transform: rotate(4000deg);
+            transition: all 5s ease-in-out;
+        }
+        .container > .two:hover ~ img{
+            transform: rotate(4000deg);
+            transition: all 4s ease-in-out;
+        }
+        .container > .three:hover ~ img{
+            transform: rotate(4000deg);
+            transition: all 3s ease-in-out;
+        }
+        .container > .four:hover ~ img{
+            transform: rotate(4000deg);
+            transition: all 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="one">1</button>
+        <button class="two">2</button>
+        <button class="three">3</button>
+        <button class="four">4</button>
+        <img src="https://www.svgrepo.com/show/503335/fan.svg" alt="" width="100px" id="fan">
+    </div>
+</body>
+</html>

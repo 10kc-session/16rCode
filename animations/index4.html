@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+            animation-name: fillMode;
+            animation-delay: 4s;
+            animation-duration: 4s;
+        }
+        @keyframes fillMode {
+            from{
+                background-color: yellow;
+            }
+            to{
+                background-color: purple;
+            }
+        }
+        .forwards{
+            animation-fill-mode: forwards;
+        }
+        .backwards{
+            animation-fill-mode: backwards;
+        }
+        .both{
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="item forwards">Forwards</div>
+    <div class="item backwards">Backward</div>
+    <div class="item both">Both</div>
+</body>
+</html>

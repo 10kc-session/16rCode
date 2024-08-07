@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            border-radius: 50%;
+            border: 20px solid;
+            border-top: 20px solid wheat;
+            position: relative;
+            /* animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out; */
+            animation: move 4s infinite;
+        }
+        @keyframes move {
+            0%{
+                /* left: 0px;
+                top: 0px; */
+                background-color: lightblue;
+                transform: rotate(0deg);
+            }
+            25%{
+                /* top: 0px;
+                left: 300px; */
+                background-color: lightcoral;
+                transform: rotate(360deg);
+            }
+            50%{
+                /* top: 300px;
+                left: 300px; */
+                background-color: lightgray;
+                transform: rotate(720deg);
+            }
+            75%{
+                /* top: 300px;
+                left: 0px; */
+                background-color: lightsalmon;
+                transform: rotate(1000deg);
+            }
+            100%{
+                top : 0px;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "name": "Devara"
+    },
+    {
+      "id": "2",
+      "name": "Pushpa - 2"
+    },
+    {
+      "id": "3",
+      "name": "Bharateyudu - 2"
+    }
+  ]
+}

@@ -5,19 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <style>
         html,
         body {
-            height: 100% !important;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+        }
+
+        #output {
+            background-color: #ccc;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            border: 0;
+            padding: 14px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .cards {
+            background-color: #eee;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
         }
     </style>
 </head>
 
-<body class="container d-flex justify-content-center align-items-center flex-column">
-    <input type="text" id="input" class="form-control w-25 m-3">
-    <button id="btn" class="btn btn-outline-primary">Add Data</button>
-    <div class="container-fluid w-50 border border-2 fs-5 text-center m-2" id="output"></div>
+<body>
+    <button id="btn">Fetch Data</button>
+    <div id="output"></div>
     <script src="./index.js"></script>
 </body>
 

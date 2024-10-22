@@ -10,23 +10,16 @@ btn.onclick = () => {
     students.push(input.value);
     localStorage.setItem("students", JSON.stringify(students));
     input.value = "";
-    displayData(students);
+    displayData();
 }
 
-function displayData(data) {
-    if (typeof data === 'object') {
-        let temp = data.join(", ");
-        output.innerHTML = temp;
+function displayData() {
+    let students = JSON.parse(localStorage.getItem("students"));
+    if (!students) {
+        output.innerHTML = "No Data Available";
     } else {
-        output.innerHTML = data;
+        output.innerHTML = students.join(", ");
     }
 }
 
-window.onload = () => {
-    let students = JSON.parse(localStorage.getItem("students")) || [];
-    if (students.length === 0) {
-        displayData('No Data Available');
-    } else {
-        displayData(students);
-    }
-}
+window.onload = displayData;
